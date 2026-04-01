@@ -1,231 +1,532 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>XMetals India</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-    }
-
-    /* NAVBAR */
-    .navbar {
-      background: #1f3c88;
-      color: white;
-      padding: 15px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .cart-btn {
-      background: #2d6cdf;
-      padding: 8px 15px;
-      border-radius: 5px;
-    }
-
-    /* HERO */
-    .hero {
-      display: flex;
-      padding: 60px;
-      background: linear-gradient(90deg, #1f3c88, #3a63c7);
-      color: white;
-    }
-
-    .hero-left {
-      width: 50%;
-    }
-
-    .hero-left h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    .hero-left p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .hero-buttons a {
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 20px;
-      padding: 12px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .btn-primary {
-      background: #2d6cdf;
-      color: white;
-    }
-
-    .btn-secondary {
-      border: 1px solid white;
-      color: white;
-    }
-
-    /* SEARCH BOX */
-    .search-box {
-      width: 40%;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      color: black;
-    }
-
-    .search-box h2 {
-      margin-bottom: 20px;
-    }
-
-    select {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .search-btn {
-      width: 100%;
-      background: #2d6cdf;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      margin-top: 15px;
-      font-size: 16px;
-    }
-
-    /* SECTION */
-    .section {
-      padding: 50px;
-      text-align: center;
-    }
-
-    .products {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      width: 200px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .footer {
-      background: #1f3c88;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-  </style>
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<div class="navbar">
-  <h2>XMETALS INDIA</h2>
-
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">Catalog</a>
-    <a href="#">Quick Quote</a>
-    <a href="#">Knowledge Center</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="#">Orders</a>
-    <a class="cart-btn" href="#">Cart</a>
-  </div>
-</div>
-
-<!-- HERO -->
-<div class="hero">
-
-  <!-- LEFT -->
-  <div class="hero-left">
-    <h1>Any Metal.<br>Any Size.<br>Cut & Ready Fast!</h1>
-
-    <p>
-      India's trusted supplier of Steel, Aluminium, Stainless Steel, Brass & Copper.
-      Cut-to-size with no minimum order.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#" class="btn-primary">Browse Catalog</a>
-      <a href="#" class="btn-secondary">Instant Quote</a>
-    </div>
-  </div>
-
-  <!-- RIGHT SEARCH BOX -->
-  <div class="search-box">
-    <h2>Shop For Your Metal</h2>
-
-    <label>Select Metal</label>
-    <select>
-      <option>All Materials</option>
-      <option>Aluminium</option>
-      <option>Stainless Steel</option>
-      <option>Mild Steel</option>
-      <option>Brass</option>
-    </select>
-
-    <label>Select Shape</label>
-    <select>
-      <option>All Shapes</option>
-      <option>Sheet</option>
-      <option>Round Bar</option>
-      <option>Square</option>
-    </select>
-
-    <label>Material Grade</label>
-    <select>
-      <option>All Grades</option>
-      <option>6061</option>
-      <option>304</option>
-      <option>EN8</option>
-    </select>
-
-    <button class="search-btn">SEARCH</button>
-  </div>
-
-</div>
-
-<!-- PRODUCTS -->
-<div class="section">
-  <h2>Popular Categories</h2>
-
-  <div class="products">
-    <div class="card">Aluminium</div>
-    <div class="card">Stainless Steel</div>
-    <div class="card">Mild Steel</div>
-    <div class="card">Brass</div>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 XMetals India | Industrial Raw Materials Supplier
-</div>
-
-</body>
-</html>
+diff --git a/index.html b/index.html
+index 7148c1bbb3e0dda90d8cd04b07fb250f7a56572b..5880ddab3b26878ee1774a747108a7d7c94617e1 100644
+--- a/index.html
++++ b/index.html
+@@ -1,150 +1,428 @@
+ <!DOCTYPE html>
+-<html>
++<html lang="en">
+ <head>
+-  <title>XMetals India</title>
+-  <meta charset="UTF-8">
+-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>XMetals | Buy Cut-to-Size Metals Online</title>
+   <style>
++    :root {
++      --bg: #f8fafc;
++      --text: #0f172a;
++      --muted: #475569;
++      --brand: #2563eb;
++      --brand-dark: #1d4ed8;
++      --card: #ffffff;
++      --line: #e2e8f0;
++      --ok: #15803d;
++    }
++
++    * { box-sizing: border-box; }
++
+     body {
+       margin: 0;
+-      font-family: Arial, sans-serif;
++      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
++      background: var(--bg);
++      color: var(--text);
+     }
+ 
+-    header {
+-      background: black;
+-      color: white;
+-      text-align: center;
+-      padding: 50px 20px;
++    .container {
++      width: min(1180px, 92%);
++      margin: 0 auto;
+     }
+ 
+-    header h1 {
+-      margin: 0;
+-      font-size: 36px;
++    .topbar {
++      background: #0b1220;
++      color: #e2e8f0;
++      font-size: 0.92rem;
++      padding: 10px 0;
+     }
+ 
+-    header p {
+-      margin: 10px 0;
+-      font-size: 18px;
++    .topbar .container {
++      display: flex;
++      justify-content: space-between;
++      gap: 16px;
++      flex-wrap: wrap;
++    }
++
++    nav {
++      background: #fff;
++      border-bottom: 1px solid var(--line);
++      position: sticky;
++      top: 0;
++      z-index: 100;
++    }
++
++    nav .container {
++      display: flex;
++      align-items: center;
++      justify-content: space-between;
++      padding: 14px 0;
++      gap: 12px;
++    }
++
++    .logo {
++      font-size: 1.4rem;
++      font-weight: 800;
++      letter-spacing: 0.2px;
++      color: #0b1220;
++      text-decoration: none;
++    }
++
++    .nav-actions {
++      display: flex;
++      gap: 10px;
++      align-items: center;
+     }
+ 
+     .btn {
+-      background: orange;
+-      padding: 12px 25px;
++      border: 1px solid var(--line);
++      background: #fff;
++      color: var(--text);
++      border-radius: 10px;
++      padding: 10px 14px;
++      cursor: pointer;
+       text-decoration: none;
+-      color: black;
+-      font-weight: bold;
+-      display: inline-block;
+-      margin-top: 15px;
++      font-weight: 600;
++      display: inline-flex;
++      align-items: center;
++      justify-content: center;
++    }
++
++    .btn-primary {
++      background: var(--brand);
++      color: #fff;
++      border-color: transparent;
++    }
++
++    .btn-primary:hover {
++      background: var(--brand-dark);
++    }
++
++    .hero {
++      background: linear-gradient(120deg, #0f172a, #1e3a8a);
++      color: #fff;
++      padding: 56px 0;
++    }
++
++    .hero-grid {
++      display: grid;
++      grid-template-columns: 1.2fr 1fr;
++      gap: 30px;
++      align-items: center;
++    }
++
++    .hero h1 {
++      margin: 0;
++      font-size: clamp(1.8rem, 3.7vw, 3rem);
++      line-height: 1.1;
++    }
++
++    .hero p {
++      font-size: 1.05rem;
++      color: #cbd5e1;
++      margin: 16px 0 22px;
++      max-width: 58ch;
++    }
++
++    .hero-card {
++      background: rgba(255, 255, 255, 0.08);
++      border: 1px solid rgba(255, 255, 255, 0.2);
++      border-radius: 14px;
++      padding: 18px;
++      backdrop-filter: blur(2px);
++    }
++
++    .hero-card h3 {
++      margin-top: 0;
++      margin-bottom: 10px;
++      font-size: 1.05rem;
++    }
++
++    .hero-list {
++      margin: 0;
++      padding-left: 18px;
++      color: #e2e8f0;
++      line-height: 1.8;
++    }
++
++    .section {
++      padding: 40px 0;
+     }
+ 
+-    section {
+-      padding: 40px 20px;
++    .section h2 {
++      margin: 0 0 14px;
++      font-size: 1.7rem;
++    }
++
++    .section p.lead {
++      margin-top: 0;
++      color: var(--muted);
++    }
++
++    .toolbar {
++      display: grid;
++      grid-template-columns: 1fr 170px 170px;
++      gap: 10px;
++      margin: 22px 0;
++    }
++
++    input, select, textarea {
++      width: 100%;
++      padding: 11px 12px;
++      border: 1px solid var(--line);
++      border-radius: 10px;
++      font: inherit;
++      background: #fff;
+     }
+ 
+     .products {
+-      display: flex;
+-      flex-wrap: wrap;
+-      gap: 20px;
++      display: grid;
++      grid-template-columns: repeat(4, minmax(0, 1fr));
++      gap: 14px;
+     }
+ 
+-    .product-card {
+-      border: 1px solid #ddd;
+-      padding: 15px;
+-      text-align: center;
+-      width: 200px;
++    .card {
++      background: var(--card);
++      border: 1px solid var(--line);
++      border-radius: 14px;
++      padding: 14px;
++      display: flex;
++      flex-direction: column;
++      gap: 10px;
++      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+     }
+ 
+-    .product-card img {
++    .card img {
+       width: 100%;
+-      height: 120px;
++      aspect-ratio: 16 / 9;
+       object-fit: cover;
++      border-radius: 8px;
++      border: 1px solid #e5e7eb;
+     }
+ 
+-    .why ul {
+-      line-height: 1.8;
++    .meta {
++      color: var(--muted);
++      font-size: 0.9rem;
++      margin-top: -4px;
+     }
+ 
+-    .footer {
+-      background: black;
+-      color: white;
+-      text-align: center;
++    .price {
++      font-weight: 800;
++      font-size: 1.05rem;
++    }
++
++    .pill {
++      display: inline-block;
++      background: #e2e8f0;
++      color: #0f172a;
++      font-size: 0.78rem;
++      border-radius: 999px;
++      padding: 5px 10px;
++      margin-right: 6px;
++    }
++
++    .quote-box {
++      display: grid;
++      grid-template-columns: 1.1fr 1fr;
++      gap: 18px;
++      background: #fff;
++      border: 1px solid var(--line);
++      border-radius: 14px;
+       padding: 20px;
+     }
+ 
+-    @media (max-width: 600px) {
+-      .products {
+-        flex-direction: column;
+-        align-items: center;
++    .msg {
++      margin-top: 10px;
++      color: var(--ok);
++      font-weight: 600;
++      min-height: 22px;
++    }
++
++    footer {
++      border-top: 1px solid var(--line);
++      background: #fff;
++      margin-top: 30px;
++      padding: 24px 0;
++      color: var(--muted);
++      font-size: 0.92rem;
++    }
++
++    @media (max-width: 1024px) {
++      .products { grid-template-columns: repeat(3, minmax(0, 1fr)); }
++    }
++
++    @media (max-width: 860px) {
++      .hero-grid,
++      .quote-box,
++      .toolbar {
++        grid-template-columns: 1fr;
+       }
++
++      .products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
++    }
++
++    @media (max-width: 520px) {
++      .products { grid-template-columns: 1fr; }
+     }
+   </style>
+ </head>
+-
+ <body>
++  <div class="topbar">
++    <div class="container">
++      <span>📞 +91 99880 11223 | sales@xmetals.in</span>
++      <span>Cut-to-size metals delivered across India.</span>
++    </div>
++  </div>
+ 
+-<!-- HEADER -->
+-<header>
+-  <h1>XMetals India</h1>
+-  <p>Any Metal. Cut & Ready Fast.</p>
+-  <a class="btn" href="contact-form.html">Get Instant Quote</a>
+-</header>
++  <nav>
++    <div class="container">
++      <a class="logo" href="#">XMetals</a>
++      <div class="nav-actions">
++        <a class="btn" href="#catalog">Catalog</a>
++        <a class="btn btn-primary" href="#quote">Get Quote</a>
++      </div>
++    </div>
++  </nav>
+ 
+-<p style="text-align:center; margin:10px;">
+-  Serving Bangalore Industrial & Manufacturing Sector
+-</p>
++  <header class="hero">
++    <div class="container hero-grid">
++      <div>
++        <h1>Buy Aluminium, Steel & Brass Online — Cut to Size</h1>
++        <p>
++          Build your own online metals store like OnlineMetals style:
++          real-time filtering, product cards, and instant quote workflow.
++        </p>
++        <a class="btn btn-primary" href="#catalog">Start Shopping</a>
++      </div>
++      <div class="hero-card">
++        <h3>Popular categories</h3>
++        <ul class="hero-list">
++          <li>Aluminium 6061 / 7075 Sheets & Bars</li>
++          <li>MS / EN8 / EN24 Round Bars</li>
++          <li>Stainless Steel 304 / 316 Flats</li>
++          <li>Brass & Copper for fabrication</li>
++        </ul>
++      </div>
++    </div>
++  </header>
+ 
+-<!-- PRODUCTS -->
+-<section>
+-  <h2>Our Products</h2>
++  <main>
++    <section class="section" id="catalog">
++      <div class="container">
++        <h2>Metal Catalog</h2>
++        <p class="lead">Search by alloy, shape, or category. Demo data included.</p>
+ 
+-  <div class="products">
++        <div class="toolbar">
++          <input id="searchInput" placeholder="Search alloy, shape, grade..." />
++          <select id="categoryFilter">
++            <option value="all">All Categories</option>
++            <option value="aluminium">Aluminium</option>
++            <option value="steel">Steel</option>
++            <option value="stainless">Stainless</option>
++            <option value="brass">Brass</option>
++          </select>
++          <select id="shapeFilter">
++            <option value="all">All Shapes</option>
++            <option value="sheet">Sheet/Plate</option>
++            <option value="round">Round Bar</option>
++            <option value="flat">Flat Bar</option>
++          </select>
++        </div>
+ 
+-    <div class="product-card">
+-      <img src="aluminum.png">
+-      <p>Aluminium</p>
+-    </div>
++        <div class="products" id="productGrid"></div>
++      </div>
++    </section>
+ 
+-    <div class="product-card">
+-      <img src="stainless-steel.png">
+-      <p>Stainless Steel</p>
+-    </div>
++    <section class="section" id="quote">
++      <div class="container">
++        <h2>Request a Custom Quote</h2>
++        <div class="quote-box">
++          <div>
++            <p class="lead">Need CNC cut, saw cut, or bulk quantity? Share your requirement.</p>
++            <span class="pill">MOQ Friendly</span>
++            <span class="pill">Fast Dispatch</span>
++            <span class="pill">B2B Billing</span>
++          </div>
++          <form id="quoteForm">
++            <input name="name" placeholder="Your name" required />
++            <input name="email" type="email" placeholder="Email address" required />
++            <input name="material" placeholder="Material + grade (e.g. EN8 round bar)" required />
++            <textarea name="message" rows="4" placeholder="Dimensions, quantity, cut lengths..."></textarea>
++            <button class="btn btn-primary" type="submit">Submit Quote Request</button>
++            <div class="msg" id="quoteMsg"></div>
++          </form>
++        </div>
++      </div>
++    </section>
++  </main>
+ 
+-    <div class="product-card">
+-      <img src="sheet-plate.png">
+-      <p>Sheets & Plates</p>
++  <footer>
++    <div class="container">
++      © 2026 XMetals India • Demo storefront template inspired by online metal ecommerce flow.
+     </div>
++  </footer>
+ 
+-    <div class="product-card">
+-      <img src="round-bar.png">
+-      <p>Round Bars</p>
+-    </div>
++  <script>
++    const products = [
++      { name: "Aluminium 6061 Sheet", category: "aluminium", shape: "sheet", price: 259, unit: "kg", image: "aluminum.png" },
++      { name: "Aluminium 7075 Round Bar", category: "aluminium", shape: "round", price: 399, unit: "kg", image: "round-bar.png" },
++      { name: "MS EN8 Round Bar", category: "steel", shape: "round", price: 124, unit: "kg", image: "steel-en21.png" },
++      { name: "EN24 Flat Bar", category: "steel", shape: "flat", price: 188, unit: "kg", image: "steel-en353.png" },
++      { name: "SS 304 Sheet", category: "stainless", shape: "sheet", price: 242, unit: "kg", image: "stainless-steel.png" },
++      { name: "SS 316 Flat Bar", category: "stainless", shape: "flat", price: 332, unit: "kg", image: "sheet-plate.png" },
++      { name: "Brass Flat", category: "brass", shape: "flat", price: 474, unit: "kg", image: "brass.png" },
++      { name: "Copper Sheet", category: "brass", shape: "sheet", price: 738, unit: "kg", image: "copper.png" }
++    ];
+ 
+-  </div>
+-</section>
+-
+-<!-- WHY CHOOSE US -->
+-<section class="why">
+-  <h2>Why Choose Us</h2>
+-
+-  <ul>
+-    <li>Fast Delivery</li>
+-    <li>Custom Cutting Available</li>
+-    <li>Industrial Grade Materials</li>
+-    <li>Reliable Supplier for OEMs & Industries</li>
+-  </ul>
+-</section>
+-
+-<!-- CTA -->
+-<section>
+-  <h2>Get a Quote</h2>
+-  <a class="btn" href="contact-form.html">Send Enquiry</a>
+-</section>
+-
+-<!-- FOOTER -->
+-<div class="footer">
+-  <p>© 2026 XMetals India | Industrial Raw Materials Supplier</p>
+-</div>
++    const grid = document.getElementById("productGrid");
++    const searchInput = document.getElementById("searchInput");
++    const categoryFilter = document.getElementById("categoryFilter");
++    const shapeFilter = document.getElementById("shapeFilter");
++
++    function renderProducts() {
++      const q = searchInput.value.toLowerCase().trim();
++      const category = categoryFilter.value;
++      const shape = shapeFilter.value;
++
++      const filtered = products.filter((p) => {
++        const matchText = `${p.name} ${p.category} ${p.shape}`.toLowerCase().includes(q);
++        const matchCategory = category === "all" || p.category === category;
++        const matchShape = shape === "all" || p.shape === shape;
++        return matchText && matchCategory && matchShape;
++      });
++
++      if (!filtered.length) {
++        grid.innerHTML = '<div class="card">No products match your filters.</div>';
++        return;
++      }
++
++      grid.innerHTML = filtered.map((p) => `
++        <article class="card">
++          <img src="${p.image}" alt="${p.name}" />
++          <h3>${p.name}</h3>
++          <p class="meta">${p.category.toUpperCase()} • ${p.shape}</p>
++          <div class="price">₹${p.price} / ${p.unit}</div>
++          <button class="btn btn-primary" type="button">Add to Quote</button>
++        </article>
++      `).join("");
++    }
++
++    [searchInput, categoryFilter, shapeFilter].forEach((el) => {
++      el.addEventListener("input", renderProducts);
++      el.addEventListener("change", renderProducts);
++    });
++
++    document.getElementById("quoteForm").addEventListener("submit", (e) => {
++      e.preventDefault();
++      const form = e.target;
++      const name = form.name.value.trim();
++      const msg = document.getElementById("quoteMsg");
++      msg.textContent = `Thanks ${name}! We received your quote request.`;
++      form.reset();
++      renderProducts();
++    });
+ 
++    renderProducts();
++  </script>
+ </body>
+ </html>
