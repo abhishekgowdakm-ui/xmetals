@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="cncbg" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="cncmetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="40%" stop-color="#94a3b8"/>
+      <stop offset="70%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="cnccolumn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="coolant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="cncglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cncglow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="url(#cncbg)"/>
+
+  <!-- CNC Machine enclosure -->
+  <rect x="50" y="50" width="500" height="310" rx="10" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <!-- Machine window -->
+  <rect x="70" y="70" width="460" height="240" rx="6" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <!-- Window reflection -->
+  <line x1="75" y1="75" x2="120" y2="75" stroke="#475569" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Column / Z-axis -->
+  <rect x="120" y="80" width="40" height="220" rx="4" fill="url(#cnccolumn)" stroke="#64748b" stroke-width="1"/>
+  <!-- Z-axis rail -->
+  <rect x="135" y="85" width="10" height="210" rx="2" fill="#1e293b" stroke="#475569" stroke-width="0.5"/>
+
+  <!-- Spindle head -->
+  <rect x="100" y="100" width="80" height="50" rx="4" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Spindle motor -->
+  <rect x="115" y="80" width="50" height="25" rx="3" fill="#475569" stroke="#64748b" stroke-width="1"/>
+  <!-- Spindle -->
+  <rect x="130" y="150" width="20" height="40" rx="2" fill="url(#cncmetal)"/>
+  <!-- Tool holder -->
+  <rect x="125" y="188" width="30" height="15" rx="2" fill="#475569" stroke="#64748b" stroke-width="0.8"/>
+  <!-- End mill -->
+  <rect x="133" y="203" width="14" height="35" rx="1" fill="url(#cncmetal)" stroke="#94a3b8" stroke-width="0.5"/>
+  <!-- Flute marks on endmill -->
+  <line x1="137" y1="208" x2="137" y2="235" stroke="#64748b" stroke-width="0.5" opacity="0.6"/>
+  <line x1="143" y1="208" x2="143" y2="235" stroke="#64748b" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Workpiece on table -->
+  <rect x="200" y="220" width="250" height="50" rx="3" fill="url(#cncmetal)" stroke="#94a3b8" stroke-width="0.8"/>
+  <!-- Machined pocket in workpiece -->
+  <rect x="220" y="220" width="80" height="25" rx="2" fill="#334155" stroke="#64748b" stroke-width="0.5"/>
+  <!-- Partially machined area (current cut) -->
+  <rect x="300" y="220" width="40" height="15" rx="1" fill="#475569"/>
+
+  <!-- Chips/swarf -->
+  <path d="M 315 220 Q 318 210 322 215 Q 326 220 330 210" stroke="#94a3b8" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M 340 218 Q 342 208 346 212" stroke="#94a3b8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M 310 215 Q 305 205 310 200" stroke="#cbd5e1" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Sparks at cutting point -->
+  <g filter="url(#cncglow)">
+    <circle cx="140" cy="238" r="2" fill="#fbbf24" opacity="0.9"/>
+    <line x1="140" y1="238" x2="130" y2="228" stroke="#fbbf24" stroke-width="0.7" opacity="0.7"/>
+    <line x1="140" y1="238" x2="148" y2="225" stroke="#f97316" stroke-width="0.7" opacity="0.6"/>
+    <line x1="140" y1="238" x2="125" y2="232" stroke="#fbbf24" stroke-width="0.5" opacity="0.5"/>
+    <circle cx="130" cy="228" r="1" fill="#fbbf24" opacity="0.8"/>
+    <circle cx="148" cy="225" r="0.8" fill="#f97316" opacity="0.7"/>
+  </g>
+
+  <!-- Coolant nozzle and stream -->
+  <rect x="170" y="185" width="8" height="12" rx="2" fill="#475569"/>
+  <path d="M 174 197 Q 165 210 155 235" stroke="url(#coolant)" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M 174 197 Q 160 215 150 240" stroke="url(#coolant)" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+  <!-- Machine table / T-slots -->
+  <rect x="180" y="270" width="290" height="20" rx="3" fill="#334155" stroke="#475569" stroke-width="1"/>
+  <!-- T-slot lines -->
+  <line x1="220" y1="275" x2="220" y2="285" stroke="#1e293b" stroke-width="3"/>
+  <line x1="325" y1="275" x2="325" y2="285" stroke="#1e293b" stroke-width="3"/>
+  <line x1="430" y1="275" x2="430" y2="285" stroke="#1e293b" stroke-width="3"/>
+
+  <!-- Clamps -->
+  <rect x="200" y="258" width="25" height="15" rx="2" fill="#475569" stroke="#64748b" stroke-width="0.5"/>
+  <rect x="425" y="258" width="25" height="15" rx="2" fill="#475569" stroke="#64748b" stroke-width="0.5"/>
+
+  <!-- Control panel (right side) -->
+  <rect x="580" y="60" width="200" height="290" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <!-- Screen -->
+  <rect x="595" y="80" width="170" height="110" rx="4" fill="#0f172a" stroke="#475569" stroke-width="1"/>
+  <!-- G-code on screen -->
+  <text x="605" y="100" fill="#22c55e" font-size="9" font-family="monospace" opacity="0.9">G90 G54</text>
+  <text x="605" y="114" fill="#22c55e" font-size="9" font-family="monospace" opacity="0.9">G00 X0 Y0 Z50</text>
+  <text x="605" y="128" fill="#22c55e" font-size="9" font-family="monospace" opacity="0.9">M03 S8000</text>
+  <text x="605" y="142" fill="#fbbf24" font-size="9" font-family="monospace" opacity="0.9">G01 Z-5 F200</text>
+  <text x="605" y="156" fill="#22c55e" font-size="9" font-family="monospace" opacity="0.9">G01 X80 F500</text>
+  <text x="605" y="170" fill="#22c55e" font-size="9" font-family="monospace" opacity="0.7">G01 Y50</text>
+  <text x="605" y="184" fill="#475569" font-size="9" font-family="monospace" opacity="0.5">...</text>
+
+  <!-- Control buttons -->
+  <circle cx="610" cy="215" r="8" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+  <text x="610" y="218" text-anchor="middle" fill="#10b981" font-size="7" font-family="sans-serif" font-weight="700">▶</text>
+  <circle cx="640" cy="215" r="8" fill="#7f1d1d" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="636" y="212" width="8" height="6" rx="1" fill="#ef4444"/>
+  <circle cx="670" cy="215" r="8" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="670" y="218" text-anchor="middle" fill="#475569" font-size="7" font-family="sans-serif">⏸</text>
+
+  <!-- Jog wheel -->
+  <circle cx="680" cy="280" r="30" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <circle cx="680" cy="280" r="24" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <circle cx="680" cy="280" r="4" fill="#475569"/>
+  <!-- Wheel markings -->
+  <line x1="680" y1="256" x2="680" y2="260" stroke="#475569" stroke-width="1"/>
+  <line x1="680" y1="300" x2="680" y2="304" stroke="#475569" stroke-width="1"/>
+  <line x1="656" y1="280" x2="660" y2="280" stroke="#475569" stroke-width="1"/>
+  <line x1="700" y1="280" x2="704" y2="280" stroke="#475569" stroke-width="1"/>
+
+  <!-- Status indicators -->
+  <rect x="595" y="315" width="60" height="20" rx="3" fill="#064e3b" stroke="#10b981" stroke-width="0.5"/>
+  <text x="625" y="329" text-anchor="middle" fill="#10b981" font-size="9" font-family="monospace" font-weight="700">RUNNING</text>
+
+  <!-- Speed readout -->
+  <rect x="665" y="315" width="90" height="20" rx="3" fill="#0f172a" stroke="#475569" stroke-width="0.5"/>
+  <text x="672" y="329" fill="#94a3b8" font-size="8" font-family="monospace">RPM</text>
+  <text x="745" y="329" text-anchor="end" fill="#3b82f6" font-size="10" font-family="monospace" font-weight="700">8000</text>
+
+  <!-- Axis readouts on left panel -->
+  <rect x="595" y="240" width="170" height="60" rx="3" fill="#0f172a" stroke="#334155" stroke-width="0.5"/>
+  <text x="605" y="258" fill="#ef4444" font-size="11" font-family="monospace" font-weight="700">X  125.430</text>
+  <text x="605" y="274" fill="#22c55e" font-size="11" font-family="monospace" font-weight="700">Y   50.000</text>
+  <text x="605" y="290" fill="#3b82f6" font-size="11" font-family="monospace" font-weight="700">Z   -5.000</text>
+
+  <!-- Title -->
+  <text x="300" y="380" text-anchor="middle" fill="#e2e8f0" font-size="14" font-family="sans-serif" font-weight="700" letter-spacing="1">CNC MILLING CENTER</text>
+</svg>

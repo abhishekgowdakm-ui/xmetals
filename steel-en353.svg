@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8b8d0"/>
+      <stop offset="50%" style="stop-color:#dde4ee"/>
+      <stop offset="100%" style="stop-color:#8899b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Square bar 3D -->
+  <polygon points="80,120 280,120 280,260 80,260" fill="url(#metal)" stroke="#64748b" stroke-width="2"/>
+  <polygon points="280,120 340,80 340,220 280,260" fill="#8899b0" stroke="#64748b" stroke-width="2"/>
+  <polygon points="80,120 140,80 340,80 280,120" fill="#c8d4e4" stroke="#64748b" stroke-width="2"/>
+  <!-- Label -->
+  <text x="200" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#f8fafc">EN353</text>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#94a3b8">Alloy Steel</text>
+  <!-- Badge -->
+  <rect x="10" y="10" width="140" height="30" rx="6" fill="#8b5cf6"/>
+  <text x="80" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff">CASE HARDENING</text>
+</svg>
