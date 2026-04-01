@@ -9,141 +9,222 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: #f5f7fb;
     }
 
-    header {
-      background: black;
+    /* NAVBAR */
+    .navbar {
+      background: #1f3c88;
       color: white;
-      text-align: center;
-      padding: 50px 20px;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header p {
-      margin: 10px 0;
-      font-size: 18px;
-    }
-
-    .btn {
-      background: orange;
-      padding: 12px 25px;
+    .nav-links a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      color: black;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 15px;
+      font-size: 14px;
     }
 
-    section {
-      padding: 40px 20px;
+    .cart-btn {
+      background: #2d6cdf;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      padding: 60px;
+      background: linear-gradient(90deg, #1f3c88, #3a63c7);
+      color: white;
+    }
+
+    .hero-left {
+      width: 50%;
+    }
+
+    .hero-left h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero-left p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 20px;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #2d6cdf;
+      color: white;
+    }
+
+    .btn-secondary {
+      border: 1px solid white;
+      color: white;
+    }
+
+    /* SEARCH BOX */
+    .search-box {
+      width: 40%;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      color: black;
+    }
+
+    .search-box h2 {
+      margin-bottom: 20px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .search-btn {
+      width: 100%;
+      background: #2d6cdf;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 50px;
+      text-align: center;
     }
 
     .products {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
 
-    .product-card {
-      border: 1px solid #ddd;
-      padding: 15px;
-      text-align: center;
+    .card {
+      background: white;
+      padding: 20px;
       width: 200px;
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-    }
-
-    .why ul {
-      line-height: 1.8;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .footer {
-      background: black;
+      background: #1f3c88;
       color: white;
       text-align: center;
       padding: 20px;
     }
 
-    @media (max-width: 600px) {
-      .products {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <h1>XMetals India</h1>
-  <p>Any Metal. Cut & Ready Fast.</p>
-  <a class="btn" href="contact-form.html">Get Instant Quote</a>
-</header>
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2>XMETALS INDIA</h2>
 
-<p style="text-align:center; margin:10px;">
-  Serving Bangalore Industrial & Manufacturing Sector
-</p>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Catalog</a>
+    <a href="#">Quick Quote</a>
+    <a href="#">Knowledge Center</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Orders</a>
+    <a class="cart-btn" href="#">Cart</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <h1>Any Metal.<br>Any Size.<br>Cut & Ready Fast!</h1>
+
+    <p>
+      India's trusted supplier of Steel, Aluminium, Stainless Steel, Brass & Copper.
+      Cut-to-size with no minimum order.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Browse Catalog</a>
+      <a href="#" class="btn-secondary">Instant Quote</a>
+    </div>
+  </div>
+
+  <!-- RIGHT SEARCH BOX -->
+  <div class="search-box">
+    <h2>Shop For Your Metal</h2>
+
+    <label>Select Metal</label>
+    <select>
+      <option>All Materials</option>
+      <option>Aluminium</option>
+      <option>Stainless Steel</option>
+      <option>Mild Steel</option>
+      <option>Brass</option>
+    </select>
+
+    <label>Select Shape</label>
+    <select>
+      <option>All Shapes</option>
+      <option>Sheet</option>
+      <option>Round Bar</option>
+      <option>Square</option>
+    </select>
+
+    <label>Material Grade</label>
+    <select>
+      <option>All Grades</option>
+      <option>6061</option>
+      <option>304</option>
+      <option>EN8</option>
+    </select>
+
+    <button class="search-btn">SEARCH</button>
+  </div>
+
+</div>
 
 <!-- PRODUCTS -->
-<section>
-  <h2>Our Products</h2>
+<div class="section">
+  <h2>Popular Categories</h2>
 
   <div class="products">
-
-    <div class="product-card">
-      <img src="aluminum.png">
-      <p>Aluminium</p>
-    </div>
-
-    <div class="product-card">
-      <img src="stainless-steel.png">
-      <p>Stainless Steel</p>
-    </div>
-
-    <div class="product-card">
-      <img src="sheet-plate.png">
-      <p>Sheets & Plates</p>
-    </div>
-
-    <div class="product-card">
-      <img src="round-bar.png">
-      <p>Round Bars</p>
-    </div>
-
+    <div class="card">Aluminium</div>
+    <div class="card">Stainless Steel</div>
+    <div class="card">Mild Steel</div>
+    <div class="card">Brass</div>
   </div>
-</section>
-
-<!-- WHY CHOOSE US -->
-<section class="why">
-  <h2>Why Choose Us</h2>
-
-  <ul>
-    <li>Fast Delivery</li>
-    <li>Custom Cutting Available</li>
-    <li>Industrial Grade Materials</li>
-    <li>Reliable Supplier for OEMs & Industries</li>
-  </ul>
-</section>
-
-<!-- CTA -->
-<section>
-  <h2>Get a Quote</h2>
-  <a class="btn" href="contact-form.html">Send Enquiry</a>
-</section>
+</div>
 
 <!-- FOOTER -->
 <div class="footer">
-  <p>© 2026 XMetals India | Industrial Raw Materials Supplier</p>
+  © 2026 XMetals India | Industrial Raw Materials Supplier
 </div>
 
 </body>
