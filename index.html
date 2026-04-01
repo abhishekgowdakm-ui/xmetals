@@ -3,61 +3,148 @@
 <head>
   <title>XMetals India</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
     }
+
     header {
       background: black;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 50px 20px;
     }
-    section {
-      padding: 30px;
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
     }
+
+    header p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
     .btn {
       background: orange;
-      padding: 10px 20px;
-      color: black;
+      padding: 12px 25px;
       text-decoration: none;
+      color: black;
       font-weight: bold;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .why ul {
+      line-height: 1.8;
+    }
+
+    .footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <h1>XMetals India</h1>
-  <p>Industrial Raw Materials Supplier</p>
+  <p>Any Metal. Cut & Ready Fast.</p>
+  <a class="btn" href="contact-form.html">Get Instant Quote</a>
 </header>
 
+<p style="text-align:center; margin:10px;">
+  Serving Bangalore Industrial & Manufacturing Sector
+</p>
+
+<!-- PRODUCTS -->
 <section>
   <h2>Our Products</h2>
-  <ul>
-    <li>Aluminium – Sheets, Rods</li>
-    <li>Stainless Steel</li>
-    <li>Mild Steel</li>
-    <li>Brass</li>
-  </ul>
+
+  <div class="products">
+
+    <div class="product-card">
+      <img src="aluminum.png">
+      <p>Aluminium</p>
+    </div>
+
+    <div class="product-card">
+      <img src="stainless-steel.png">
+      <p>Stainless Steel</p>
+    </div>
+
+    <div class="product-card">
+      <img src="sheet-plate.png">
+      <p>Sheets & Plates</p>
+    </div>
+
+    <div class="product-card">
+      <img src="round-bar.png">
+      <p>Round Bars</p>
+    </div>
+
+  </div>
 </section>
 
-<section>
+<!-- WHY CHOOSE US -->
+<section class="why">
   <h2>Why Choose Us</h2>
+
   <ul>
     <li>Fast Delivery</li>
     <li>Custom Cutting Available</li>
     <li>Industrial Grade Materials</li>
+    <li>Reliable Supplier for OEMs & Industries</li>
   </ul>
 </section>
 
+<!-- CTA -->
 <section>
   <h2>Get a Quote</h2>
   <a class="btn" href="contact-form.html">Send Enquiry</a>
 </section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2026 XMetals India | Industrial Raw Materials Supplier</p>
+</div>
 
 </body>
 </html>
